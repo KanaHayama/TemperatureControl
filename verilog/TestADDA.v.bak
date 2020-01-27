@@ -1,0 +1,20 @@
+module TestAD (clock, level, nCS, SDATA, SCLK);
+	input clock;
+	output [7:0] level;
+	output nCS;
+	input SDATA;
+	output SCLK;
+	
+	wire [7:0] tempLevel;
+	
+	AD(.clock(clock), .level(tempLevel), .SDATA(SDATA), .nCS(nCS));
+	assign SCLK = clock;
+	assign level[00] = !tempLevel[00];
+	assign level[01] = !tempLevel[01];
+	assign level[02] = !tempLevel[02];
+	assign level[03] = !tempLevel[03];
+	assign level[04] = !tempLevel[04];
+	assign level[05] = !tempLevel[05];
+	assign level[06] = !tempLevel[06];
+	assign level[07] = !tempLevel[07];
+endmodule

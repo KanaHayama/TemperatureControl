@@ -1,0 +1,8 @@
+module Top (originalClock, nCS, SDATA, nSYNC, DIN, pwm);
+	input originalClock;
+	output nCS;
+	input SDATA;
+	output nSYNC;
+	output DIN;
+	output pwm;
+endmodule

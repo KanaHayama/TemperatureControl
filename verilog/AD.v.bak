@@ -1,0 +1,33 @@
+module AD (clock, level, SDATA, CS);
+	input clock;
+	output reg [11:0] level;
+	input SDATA;
+	output reg CS;
+	
+	reg [11:0] tempLevel;
+	reg [4:0] state;
+	
+	initial begin
+		CS = 1'b1;
+		state = 5'd0;
+		level = 12'd0;
+	end
+	
+	always @(posedge clock) begin
+		if (state == 5'd0) begin
+			CS = 1'b0;
+			state = state + 5'd1;
+		end else if (5'd1 <= state && state <= 5'd3) begin
+			state = state + 5'd1;
+		end else if (5'd4 <= state && state <= 5'd15) begin
+			tempLevel[5'd15 - state] = SDATA;
+			state = state + 5'd1;
+		end else if (state == 5'd16) begin
+			CS = 1'b1;
+			level = tempLevel;
+			state = 5'd0;
+		end
+	end
+	
+
+endmodule

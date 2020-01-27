@@ -1,0 +1,12 @@
+module DA (clock, level, nSYNC, DIN);
+	input clock;
+	input [7:0] level;
+	output nSYNC;
+	output DIN;
+	reg [:0] state;
+	
+	initial begin
+		nSYNC = 1'b1;
+		state = 'd0;
+	end
+endmodule

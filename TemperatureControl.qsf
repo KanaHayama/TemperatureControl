@@ -1,0 +1,140 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 11.0 Build 157 04/27/2011 SJ Full Version
+# Date created = 10:54:12  April 21, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		TemperatureControl_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C25Q240C8
+set_global_assignment -name TOP_LEVEL_ENTITY Top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:54:12  APRIL 21, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 240
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_159 -to clock
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE verilog/TestADDA.v
+set_global_assignment -name VERILOG_FILE verilog/PwmGeneratorPre.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE vwf/AD.vwf
+set_global_assignment -name VERILOG_FILE verilog/AD.v
+set_global_assignment -name VERILOG_FILE verilog/ClockGenerator.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE vwf/ClockGenerator.vwf
+set_global_assignment -name VERILOG_FILE verilog/FixFreqPwmGen.v
+set_global_assignment -name VERILOG_FILE verilog/PidCore.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE vwf/PidCore.vwf
+set_global_assignment -name VERILOG_FILE verilog/DA.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE vwf/DA.vwf
+set_global_assignment -name VERILOG_FILE verilog/Top.v
+set_location_assignment PIN_185 -to clockAD
+set_location_assignment PIN_187 -to clockDA
+set_location_assignment PIN_183 -to nCS
+set_location_assignment PIN_186 -to nSYNC
+set_location_assignment PIN_184 -to SDATA
+set_location_assignment PIN_188 -to DIN
+set_location_assignment PIN_148 -to pwm
+set_global_assignment -name VERILOG_FILE verilog/TestPwm.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE vwf/FixFreqPwmGen.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_location_assignment PIN_107 -to led[0]
+set_location_assignment PIN_108 -to led[1]
+set_location_assignment PIN_109 -to led[2]
+set_location_assignment PIN_111 -to led[3]
+set_location_assignment PIN_112 -to led[4]
+set_location_assignment PIN_117 -to led[5]
+set_location_assignment PIN_120 -to led[6]
+set_location_assignment PIN_128 -to led[7]
+set_location_assignment PIN_33 -to originalClock
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "E:/TemperatureControl/simulation/qsim/" -section_id eda_simulation
+set_location_assignment PIN_161 -to fan
+set_location_assignment PIN_160 -to nPwm
+set_global_assignment -name VERILOG_FILE verilog/DisplayDifference.v
+set_location_assignment PIN_221 -to tube1[0]
+set_location_assignment PIN_216 -to tube0[0]
+set_location_assignment PIN_214 -to tube0[1]
+set_location_assignment PIN_203 -to tube0[2]
+set_location_assignment PIN_202 -to tube0[3]
+set_location_assignment PIN_201 -to tube0[4]
+set_location_assignment PIN_217 -to tube0[5]
+set_location_assignment PIN_218 -to tube0[6]
+set_location_assignment PIN_207 -to tube0[7]
+set_location_assignment PIN_219 -to tube1[1]
+set_location_assignment PIN_197 -to tube1[2]
+set_location_assignment PIN_196 -to tube1[3]
+set_location_assignment PIN_195 -to tube1[4]
+set_location_assignment PIN_223 -to tube1[5]
+set_location_assignment PIN_224 -to tube1[6]
+set_location_assignment PIN_200 -to tube1[7]
+set_location_assignment PIN_212 -to reset
+set_global_assignment -name VERILOG_FILE verilog/DestSetting.v
+set_global_assignment -name VERILOG_FILE verilog/DispalyDestAndCurr.v
+set_location_assignment PIN_234 -to tube2[0]
+set_location_assignment PIN_226 -to tube2[1]
+set_location_assignment PIN_231 -to tube2[2]
+set_location_assignment PIN_235 -to tube2[3]
+set_location_assignment PIN_236 -to tube2[4]
+set_location_assignment PIN_232 -to tube2[5]
+set_location_assignment PIN_230 -to tube2[6]
+set_location_assignment PIN_233 -to tube2[7]
+set_location_assignment PIN_240 -to tube2Com[0]
+set_location_assignment PIN_239 -to tube2Com[1]
+set_location_assignment PIN_238 -to tube2Com[2]
+set_location_assignment PIN_237 -to tube2Com[3]
+set_location_assignment PIN_93 -to key[0]
+set_location_assignment PIN_94 -to key[1]
+set_location_assignment PIN_95 -to key[2]
+set_location_assignment PIN_98 -to key[3]
+set_location_assignment PIN_99 -to key[4]
+set_location_assignment PIN_100 -to key[5]
+set_location_assignment PIN_103 -to key[6]
+set_location_assignment PIN_106 -to key[7]
+set_global_assignment -name VERILOG_FILE verilog/SimpleCore.v
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "F:/TemperatureControl/vwf/AD.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_113 -to displayMode
+set_location_assignment PIN_110 -to power
+set_location_assignment PIN_114 -to coreSelect
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

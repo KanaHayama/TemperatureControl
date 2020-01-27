@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clockAD",
+					"strict" : false
+				},
+				{
+					"name" : "nCS",
+					"strict" : false
+				},
+				{
+					"name" : "clockDA",
+					"strict" : false
+				},
+				{
+					"name" : "nSYNC",
+					"strict" : false
+				},
+				{
+					"name" : "DIN",
+					"strict" : false
+				},
+				{
+					"name" : "pwm",
+					"strict" : false
+				},
+				{
+					"name" : "originalClock",
+					"strict" : false
+				},
+				{
+					"name" : "SDATA",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

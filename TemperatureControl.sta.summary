@@ -1,0 +1,137 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'ClockGenerator:comb_3|newClock'
+Slack : -23.401
+TNS   : -1072.048
+
+Type  : Slow 1200mV 85C Model Setup 'DisplayDestAndCurr:comb_17|ClockGenerator:comb_3|newClock'
+Slack : -17.887
+TNS   : -128.052
+
+Type  : Slow 1200mV 85C Model Setup 'originalClock'
+Slack : -4.362
+TNS   : -57.415
+
+Type  : Slow 1200mV 85C Model Hold 'ClockGenerator:comb_3|newClock'
+Slack : -0.662
+TNS   : -0.662
+
+Type  : Slow 1200mV 85C Model Hold 'originalClock'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DisplayDestAndCurr:comb_17|ClockGenerator:comb_3|newClock'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'ClockGenerator:comb_3|newClock'
+Slack : -2.192
+TNS   : -122.707
+
+Type  : Slow 1200mV 85C Model Removal 'ClockGenerator:comb_3|newClock'
+Slack : 1.528
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'originalClock'
+Slack : -3.000
+TNS   : -25.305
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ClockGenerator:comb_3|newClock'
+Slack : -1.487
+TNS   : -214.128
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DisplayDestAndCurr:comb_17|ClockGenerator:comb_3|newClock'
+Slack : -1.487
+TNS   : -20.818
+
+Type  : Slow 1200mV 0C Model Setup 'ClockGenerator:comb_3|newClock'
+Slack : -21.642
+TNS   : -987.865
+
+Type  : Slow 1200mV 0C Model Setup 'DisplayDestAndCurr:comb_17|ClockGenerator:comb_3|newClock'
+Slack : -16.386
+TNS   : -117.063
+
+Type  : Slow 1200mV 0C Model Setup 'originalClock'
+Slack : -3.963
+TNS   : -51.856
+
+Type  : Slow 1200mV 0C Model Hold 'ClockGenerator:comb_3|newClock'
+Slack : -0.577
+TNS   : -0.577
+
+Type  : Slow 1200mV 0C Model Hold 'originalClock'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DisplayDestAndCurr:comb_17|ClockGenerator:comb_3|newClock'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'ClockGenerator:comb_3|newClock'
+Slack : -1.990
+TNS   : -107.497
+
+Type  : Slow 1200mV 0C Model Removal 'ClockGenerator:comb_3|newClock'
+Slack : 1.389
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'originalClock'
+Slack : -3.000
+TNS   : -25.305
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ClockGenerator:comb_3|newClock'
+Slack : -1.487
+TNS   : -214.142
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DisplayDestAndCurr:comb_17|ClockGenerator:comb_3|newClock'
+Slack : -1.487
+TNS   : -20.818
+
+Type  : Fast 1200mV 0C Model Setup 'ClockGenerator:comb_3|newClock'
+Slack : -9.458
+TNS   : -386.429
+
+Type  : Fast 1200mV 0C Model Setup 'DisplayDestAndCurr:comb_17|ClockGenerator:comb_3|newClock'
+Slack : -7.072
+TNS   : -49.437
+
+Type  : Fast 1200mV 0C Model Setup 'originalClock'
+Slack : -1.252
+TNS   : -15.360
+
+Type  : Fast 1200mV 0C Model Hold 'ClockGenerator:comb_3|newClock'
+Slack : -0.402
+TNS   : -0.402
+
+Type  : Fast 1200mV 0C Model Hold 'originalClock'
+Slack : -0.147
+TNS   : -0.147
+
+Type  : Fast 1200mV 0C Model Hold 'DisplayDestAndCurr:comb_17|ClockGenerator:comb_3|newClock'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'ClockGenerator:comb_3|newClock'
+Slack : -0.384
+TNS   : -14.234
+
+Type  : Fast 1200mV 0C Model Removal 'ClockGenerator:comb_3|newClock'
+Slack : 0.653
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'originalClock'
+Slack : -3.000
+TNS   : -18.837
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ClockGenerator:comb_3|newClock'
+Slack : -1.000
+TNS   : -144.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DisplayDestAndCurr:comb_17|ClockGenerator:comb_3|newClock'
+Slack : -1.000
+TNS   : -14.000
+
+------------------------------------------------------------

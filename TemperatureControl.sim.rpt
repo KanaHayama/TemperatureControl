@@ -1,0 +1,292 @@
+Simulator report for TemperatureControl
+Mon May 30 08:49:59 2016
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 100 nodes    ;
+; Simulation Coverage         ;      64.00 % ;
+; Total Number of Transitions ; 659          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                            ;
++--------------------------------------------------------------------------------------------+----------------------------------+---------------+
+; Option                                                                                     ; Setting                          ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                       ; Timing        ;
+; Start time                                                                                 ; 0 ns                             ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                              ;               ;
+; Vector input source                                                                        ; F:/TemperatureControl/vwf/AD.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                               ; On            ;
+; Check outputs                                                                              ; Off                              ; Off           ;
+; Report simulation coverage                                                                 ; On                               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                               ; On            ;
+; Display missing 1-value coverage report                                                    ; On                               ; On            ;
+; Display missing 0-value coverage report                                                    ; On                               ; On            ;
+; Detect setup and hold time violations                                                      ; Off                              ; Off           ;
+; Detect glitches                                                                            ; Off                              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                              ; Off           ;
+; Generate Signal Activity File                                                              ; Off                              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                             ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                        ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                        ; Transport     ;
++--------------------------------------------------------------------------------------------+----------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      64.00 % ;
+; Total nodes checked                                 ; 100          ;
+; Total output ports checked                          ; 100          ;
+; Total output ports with complete 1/0-value coverage ; 64           ;
+; Total output ports with no 1/0-value coverage       ; 28           ;
+; Total output ports with no 1-value coverage         ; 28           ;
+; Total output ports with no 0-value coverage         ; 36           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------+
+; Complete 1/0-Value Coverage                            ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |AD|tempLevel~0  ; |AD|tempLevel~0  ; out0             ;
+; |AD|tempLevel~1  ; |AD|tempLevel~1  ; out              ;
+; |AD|tempLevel~2  ; |AD|tempLevel~2  ; out0             ;
+; |AD|tempLevel~3  ; |AD|tempLevel~3  ; out              ;
+; |AD|tempLevel~4  ; |AD|tempLevel~4  ; out0             ;
+; |AD|tempLevel~6  ; |AD|tempLevel~6  ; out0             ;
+; |AD|tempLevel~8  ; |AD|tempLevel~8  ; out0             ;
+; |AD|tempLevel~9  ; |AD|tempLevel~9  ; out              ;
+; |AD|tempLevel~10 ; |AD|tempLevel~10 ; out0             ;
+; |AD|tempLevel~12 ; |AD|tempLevel~12 ; out0             ;
+; |AD|tempLevel~13 ; |AD|tempLevel~13 ; out              ;
+; |AD|tempLevel~14 ; |AD|tempLevel~14 ; out0             ;
+; |AD|tempLevel~16 ; |AD|tempLevel~16 ; out              ;
+; |AD|tempLevel~17 ; |AD|tempLevel~17 ; out              ;
+; |AD|tempLevel~20 ; |AD|tempLevel~20 ; out              ;
+; |AD|tempLevel~22 ; |AD|tempLevel~22 ; out              ;
+; |AD|tempLevel~24 ; |AD|tempLevel~24 ; out              ;
+; |AD|tempLevel~25 ; |AD|tempLevel~25 ; out              ;
+; |AD|tempLevel~28 ; |AD|tempLevel~28 ; out              ;
+; |AD|tempLevel~30 ; |AD|tempLevel~30 ; out              ;
+; |AD|nCS~1        ; |AD|nCS~1        ; out              ;
+; |AD|state~0      ; |AD|state~0      ; out              ;
+; |AD|state~1      ; |AD|state~1      ; out              ;
+; |AD|state~2      ; |AD|state~2      ; out              ;
+; |AD|state~3      ; |AD|state~3      ; out              ;
+; |AD|state[0]     ; |AD|state[0]     ; regout           ;
+; |AD|state[1]     ; |AD|state[1]     ; regout           ;
+; |AD|state[2]     ; |AD|state[2]     ; regout           ;
+; |AD|state[3]     ; |AD|state[3]     ; regout           ;
+; |AD|tempLevel[7] ; |AD|tempLevel[7] ; regout           ;
+; |AD|nCS~reg0     ; |AD|nCS~reg0     ; regout           ;
+; |AD|clock        ; |AD|clock        ; out              ;
+; |AD|nCS          ; |AD|nCS          ; pin_out          ;
+; |AD|SDATA        ; |AD|SDATA        ; out              ;
+; |AD|Decoder0~0   ; |AD|Decoder0~0   ; out0             ;
+; |AD|Decoder0~1   ; |AD|Decoder0~1   ; out0             ;
+; |AD|Decoder0~2   ; |AD|Decoder0~2   ; out0             ;
+; |AD|Decoder0~3   ; |AD|Decoder0~3   ; out0             ;
+; |AD|Decoder0~4   ; |AD|Decoder0~4   ; out0             ;
+; |AD|Decoder0~5   ; |AD|Decoder0~5   ; out0             ;
+; |AD|Decoder0~6   ; |AD|Decoder0~6   ; out0             ;
+; |AD|Decoder0~7   ; |AD|Decoder0~7   ; out0             ;
+; |AD|LessThan0~0  ; |AD|LessThan0~0  ; out0             ;
+; |AD|LessThan0~1  ; |AD|LessThan0~1  ; out0             ;
+; |AD|LessThan0~2  ; |AD|LessThan0~2  ; out0             ;
+; |AD|LessThan0~3  ; |AD|LessThan0~3  ; out0             ;
+; |AD|LessThan0~4  ; |AD|LessThan0~4  ; out0             ;
+; |AD|LessThan1~0  ; |AD|LessThan1~0  ; out0             ;
+; |AD|LessThan1~1  ; |AD|LessThan1~1  ; out0             ;
+; |AD|LessThan1~2  ; |AD|LessThan1~2  ; out0             ;
+; |AD|LessThan1~3  ; |AD|LessThan1~3  ; out0             ;
+; |AD|LessThan1~4  ; |AD|LessThan1~4  ; out0             ;
+; |AD|Add0~0       ; |AD|Add0~0       ; out0             ;
+; |AD|Add0~1       ; |AD|Add0~1       ; out0             ;
+; |AD|Add0~2       ; |AD|Add0~2       ; out0             ;
+; |AD|Add0~3       ; |AD|Add0~3       ; out0             ;
+; |AD|Add0~4       ; |AD|Add0~4       ; out0             ;
+; |AD|Add0~5       ; |AD|Add0~5       ; out0             ;
+; |AD|Add1~0       ; |AD|Add1~0       ; out0             ;
+; |AD|Add1~1       ; |AD|Add1~1       ; out0             ;
+; |AD|Add1~2       ; |AD|Add1~2       ; out0             ;
+; |AD|Add1~3       ; |AD|Add1~3       ; out0             ;
+; |AD|Add1~4       ; |AD|Add1~4       ; out0             ;
+; |AD|Equal0~0     ; |AD|Equal0~0     ; out0             ;
++------------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------+
+; Missing 1-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |AD|level[3]~reg0 ; |AD|level[3]~reg0 ; regout           ;
+; |AD|tempLevel~5   ; |AD|tempLevel~5   ; out              ;
+; |AD|tempLevel~7   ; |AD|tempLevel~7   ; out              ;
+; |AD|tempLevel~11  ; |AD|tempLevel~11  ; out              ;
+; |AD|tempLevel~18  ; |AD|tempLevel~18  ; out              ;
+; |AD|tempLevel~19  ; |AD|tempLevel~19  ; out              ;
+; |AD|tempLevel~21  ; |AD|tempLevel~21  ; out              ;
+; |AD|nCS~0         ; |AD|nCS~0         ; out              ;
+; |AD|tempLevel~26  ; |AD|tempLevel~26  ; out              ;
+; |AD|tempLevel~27  ; |AD|tempLevel~27  ; out              ;
+; |AD|tempLevel~29  ; |AD|tempLevel~29  ; out              ;
+; |AD|level[2]~reg0 ; |AD|level[2]~reg0 ; regout           ;
+; |AD|level[1]~reg0 ; |AD|level[1]~reg0 ; regout           ;
+; |AD|level[4]~reg0 ; |AD|level[4]~reg0 ; regout           ;
+; |AD|level[5]~reg0 ; |AD|level[5]~reg0 ; regout           ;
+; |AD|level[6]~reg0 ; |AD|level[6]~reg0 ; regout           ;
+; |AD|tempLevel[1]  ; |AD|tempLevel[1]  ; regout           ;
+; |AD|tempLevel[2]  ; |AD|tempLevel[2]  ; regout           ;
+; |AD|tempLevel[3]  ; |AD|tempLevel[3]  ; regout           ;
+; |AD|tempLevel[4]  ; |AD|tempLevel[4]  ; regout           ;
+; |AD|tempLevel[5]  ; |AD|tempLevel[5]  ; regout           ;
+; |AD|tempLevel[6]  ; |AD|tempLevel[6]  ; regout           ;
+; |AD|level[1]      ; |AD|level[1]      ; pin_out          ;
+; |AD|level[2]      ; |AD|level[2]      ; pin_out          ;
+; |AD|level[3]      ; |AD|level[3]      ; pin_out          ;
+; |AD|level[4]      ; |AD|level[4]      ; pin_out          ;
+; |AD|level[5]      ; |AD|level[5]      ; pin_out          ;
+; |AD|level[6]      ; |AD|level[6]      ; pin_out          ;
++-------------------+-------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------+
+; Missing 0-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |AD|level[3]~reg0 ; |AD|level[3]~reg0 ; regout           ;
+; |AD|tempLevel~5   ; |AD|tempLevel~5   ; out              ;
+; |AD|tempLevel~7   ; |AD|tempLevel~7   ; out              ;
+; |AD|tempLevel~11  ; |AD|tempLevel~11  ; out              ;
+; |AD|tempLevel~15  ; |AD|tempLevel~15  ; out              ;
+; |AD|tempLevel~18  ; |AD|tempLevel~18  ; out              ;
+; |AD|tempLevel~19  ; |AD|tempLevel~19  ; out              ;
+; |AD|tempLevel~21  ; |AD|tempLevel~21  ; out              ;
+; |AD|tempLevel~23  ; |AD|tempLevel~23  ; out              ;
+; |AD|nCS~0         ; |AD|nCS~0         ; out              ;
+; |AD|tempLevel~26  ; |AD|tempLevel~26  ; out              ;
+; |AD|tempLevel~27  ; |AD|tempLevel~27  ; out              ;
+; |AD|tempLevel~29  ; |AD|tempLevel~29  ; out              ;
+; |AD|tempLevel~31  ; |AD|tempLevel~31  ; out              ;
+; |AD|level[2]~reg0 ; |AD|level[2]~reg0 ; regout           ;
+; |AD|level[1]~reg0 ; |AD|level[1]~reg0 ; regout           ;
+; |AD|level[0]~reg0 ; |AD|level[0]~reg0 ; regout           ;
+; |AD|level[4]~reg0 ; |AD|level[4]~reg0 ; regout           ;
+; |AD|level[5]~reg0 ; |AD|level[5]~reg0 ; regout           ;
+; |AD|level[6]~reg0 ; |AD|level[6]~reg0 ; regout           ;
+; |AD|level[7]~reg0 ; |AD|level[7]~reg0 ; regout           ;
+; |AD|tempLevel[0]  ; |AD|tempLevel[0]  ; regout           ;
+; |AD|tempLevel[1]  ; |AD|tempLevel[1]  ; regout           ;
+; |AD|tempLevel[2]  ; |AD|tempLevel[2]  ; regout           ;
+; |AD|tempLevel[3]  ; |AD|tempLevel[3]  ; regout           ;
+; |AD|tempLevel[4]  ; |AD|tempLevel[4]  ; regout           ;
+; |AD|tempLevel[5]  ; |AD|tempLevel[5]  ; regout           ;
+; |AD|tempLevel[6]  ; |AD|tempLevel[6]  ; regout           ;
+; |AD|level[0]      ; |AD|level[0]      ; pin_out          ;
+; |AD|level[1]      ; |AD|level[1]      ; pin_out          ;
+; |AD|level[2]      ; |AD|level[2]      ; pin_out          ;
+; |AD|level[3]      ; |AD|level[3]      ; pin_out          ;
+; |AD|level[4]      ; |AD|level[4]      ; pin_out          ;
+; |AD|level[5]      ; |AD|level[5]      ; pin_out          ;
+; |AD|level[6]      ; |AD|level[6]      ; pin_out          ;
+; |AD|level[7]      ; |AD|level[7]      ; pin_out          ;
++-------------------+-------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Mon May 30 08:49:56 2016
+Info: Command: quartus_sim --simulation_results_format=VWF TemperatureControl -c TemperatureControl
+Info (324025): Using vector source file "F:/TemperatureControl/vwf/AD.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      64.00 %
+Info (328052): Number of transitions in simulation is 659
+Info (324045): Vector file TemperatureControl.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 250 megabytes
+    Info: Processing ended: Mon May 30 08:49:59 2016
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+

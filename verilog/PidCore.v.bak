@@ -1,0 +1,20 @@
+module PidCore(clock, dest, curr, pid);
+	parameter P = 1;
+	parameter I = 1;
+	parameter D = 1;
+	
+	input clock;
+	input [7:0] dest, curr;
+	output reg [7:0] pid;
+	reg [15:0] temp, errSum;
+	reg [7:0] err0, err1, err2;
+	
+	
+	initial begin
+		err0 = 8'd0;
+		err1 = 8'd0;
+		err2 = 8'd0;
+		errSum = 16'd0;
+	end
+
+endmodule
